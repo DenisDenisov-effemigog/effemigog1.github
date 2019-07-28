@@ -1,0 +1,33 @@
+.pagination{
+    margin: 5px 0 27px 0;
+}
+.pagination__list{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+.pagination__link{
+    text-decoration: none;
+    padding: 7px;
+    color: #221f1f;
+    font-weight: bold;
+}
+.pagination__link:hover{
+    color: #1c5bc3;
+}
+.pagination__link-active{
+    color: #fff;
+    background-color: #4b73b5;
+    border-radius: 5px;
+    padding: 5px 9px;
+    text-decoration: none;
+}
+.pagination__list::before{
+    content: "страница 1 из 7";
+    font-weight: 300;
+    padding-right: 10px;
+}
+.pagination__list-rev::before{
+    content: "страница 2 из 7";
+    font-weight: 300;
+}

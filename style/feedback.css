@@ -1,0 +1,124 @@
+
+.form-section{
+    margin: 40px 29%;
+    min-width: 700px;
+}
+.radio__block{
+   display: flex;
+   flex-wrap: wrap
+}
+.radio__text{
+    flex: 1 261px;
+}
+.radio{
+    margin-right: 25px;
+    display: flex;
+}
+.radio__input:checked ~ .input__text{
+    color: #1c5bc3;
+}
+.feedback{
+    background-color: #f5f5f5;
+    padding: 25px 60px 0;  
+}
+
+.contact__form{
+    display: flex;
+    padding-bottom: 18px;
+    justify-content: space-between;
+}
+.feedback__form--right{
+    margin-right: 30px;
+}
+.feedback__form{
+    flex: 1;
+    padding-bottom: 10px;
+}
+.feedback__form:last-child{
+    margin-right: 0px;
+}
+.feedback__input {
+    padding: 15px 9px;
+    background: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+  } 
+  .feedback__textarea {
+    resize: vertical;
+    height: 90px;
+    width: 100%;
+    resize: none;
+  }
+.feedback__button{  
+    color:#fff;  
+    position: relative;
+    border: 1px solid  #4b73b5;
+    border-radius: 3px;
+    background-color:  #4b73b5;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 18px 43px 18px 20px;
+}
+.feedback__button::after{
+    content: "";
+    position: absolute;
+    bottom: 38%;
+    right: 10%;
+    background: url(../rev-img/spritesheet.png) no-repeat;
+    display: block;
+    width: 15px;
+    height: 14px;
+    background-position: -3px -3px;
+    opacity: 0;
+    transition: 0.3s;
+}
+.feedback__button::before{
+    content: "";
+    position: absolute;
+    right: 10%;
+    bottom: 38%;
+    background: url(../rev-img/spritesheet.png) no-repeat;
+    display: block;
+    width: 15px;
+    height: 14px;
+    background-position: -24px -3px;
+    opacity: 1;
+}
+.feedback__button:hover::after{
+    opacity: 1;
+}
+.feedback__button:hover::before{
+    opacity: 0;
+}
+.feedback__button:hover{
+    background-color:#fff;
+    color: #4b73b5;
+    transition: 0.3s;
+}
+
+.radio__input{
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    outline: none;
+    border: 1px solid gray;
+    margin-right: 10px;
+}
+.radio__input::before {
+    content: '';
+    display: block;
+    width: 40%;
+    height: 40%;
+    margin: 30% auto;
+    border-radius: 50%;
+}
+.radio__input:checked::before{
+    background: #4b73b5;
+}
+.radio__input:checked{
+    border-color: #4b73b5
+}

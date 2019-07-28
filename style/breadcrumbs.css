@@ -1,0 +1,19 @@
+.breadcrumbs{
+    padding: 18px 0 0 0;
+}
+.breadcrumbs__list{
+    display: flex;
+    padding-top: 25px;
+}
+.breadcrumbs__link{
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 300; 
+}
+.breadcrumbs__first-link::after{
+    content: "/"
+}
+.breadcrumbs__link:hover{
+    color:#a1b3e0;
+    text-decoration: underline;
+}

@@ -1,0 +1,21 @@
+.pattern{
+    margin-top: 30px;
+}    
+.pattern__background{
+    background: url(../rev-img/pattern.png) center center no-repeat;
+    background-color: #4b73b5;  
+}
+.pattern__text{
+    font-size: 18px;
+    font-weight: 300px;
+    text-align: center;
+    color: #fff;
+    line-height: 1.667; 
+    padding: 30px 17px;
+
+}
+.pattern__link{
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}

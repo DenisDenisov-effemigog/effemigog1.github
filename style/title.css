@@ -1,0 +1,105 @@
+
+.background{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../title-img//kzhhnb6xsqi-margo-brodowicz.jpg) center center no-repeat;
+    background-size: cover;  
+}
+.background__boxing{
+    background-color: rgba(237,241,248, 0.7);
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu{
+    animation: title 0.9s;
+    color:#4b73b5;
+}
+@keyframes title{
+    0%{
+        
+        opacity: 0;
+        transform: translateY(0);   
+    }
+    50%{
+        opacity: 1;   
+    }
+    55%{
+       
+       transform: translateY(-75px)
+    }
+    70%{
+        transform: translateY(0)
+    }
+    85%{
+        transform: translateY(-20px) 
+    }
+    100%{
+        transform: translateY(0)
+    }
+}
+
+.logo__img{
+    margin-bottom: 15px;  
+}
+
+.menu__link{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu__button{  
+    color:#1d5bc3;  
+    position: relative;
+    border: 1px solid  #4b73b5;
+    border-radius: 3px;
+    background-color: transparent;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2px;
+    padding: 17px 40px;
+}
+.menu__button::after{
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: url(../rev-img/spritesheet.png) no-repeat;
+    display: block;
+    width: 15px;
+    height: 14px;
+    background-position: -3px -3px;
+    opacity: 1;
+    transition: 0.3s;
+}
+.menu__button::before{
+    content: "";
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background: url(../rev-img/spritesheet.png) no-repeat;
+    display: block;
+    width: 15px;
+    height: 14px;
+    background-position: -24px -3px;
+    opacity: 0;
+}
+.menu:hover .menu__button::after{
+    opacity: 0;
+}
+.menu:hover .menu__button::before{
+    opacity: 1;
+}
+.menu:hover .menu__button{
+    background-color: #4b73b5;
+    color: #fff;
+    transition: 0.3s;
+}

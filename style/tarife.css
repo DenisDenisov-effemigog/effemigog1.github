@@ -1,0 +1,39 @@
+
+.tarife__desc{
+    display: flex;
+    flex-direction: column;
+    line-height: 32px;
+    border: 1px solid #ccc;
+    padding: 20px 17px;
+}
+.tarife__text-desc{
+    padding-top: 10px;
+}
+.tarife__block{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 25px;
+}
+.tarife__title{
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-top: 20px; 
+}
+.tarife__text{
+    padding-top: 10px;  
+    font-size: 18px;
+    font-weight: 300; 
+}
+
+.price{
+    font-size: 50px;  
+    padding-top: 45px;
+}
+.internal-list__item{
+    list-style-type: disc;
+    text-align: left;
+    margin-left: 60px;
+
+}

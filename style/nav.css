@@ -1,0 +1,109 @@
+.nav{
+    margin: 23px 0 0 49px;
+}
+.nav__link{
+    color: #5a73b2;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2.4px;
+    font-size: 12px;
+}
+.nav__link:hover{
+    color: #000;
+    transition: 0.3s;
+}
+.nav__link{
+    position: relative;
+}
+.nav__item{
+    margin-right: 130px;
+}
+.nav__item:last-child{
+    margin-right: 0px;
+}
+.nav__link:before{
+    content: "";
+    position: absolute;
+    background-image: url(../img/sprite_icon.png);
+    background-repeat: no-repeat;
+    display: block;
+    bottom: 0px;
+    right: 80px;
+    transition: 0.3s;
+}
+.nav__link:after{
+    content: "";
+    position: absolute;
+    background-image: url(../img/sprite_icon.png);
+    background-repeat: no-repeat;
+    display: block;
+    bottom: 0px;
+    right: 80px;
+    transition: 0.3s;
+}
+.nav__link:hover:before{
+    opacity: 0;
+}
+.nav__link:hover:after{
+    opacity: 1;
+}
+
+.nav__link--team:before{
+    width: 23px;
+    height: 18px;
+    background-position: -145px -21px;
+    opacity: 1;
+}
+.nav__link--team:after{
+    width: 23px;
+    height: 18px;
+    background-position: -139px -81px;;
+    opacity: 0;
+}
+.nav__link--main:before{
+    width: 23px;
+    height: 18px;
+    background-position: -80px -81px;
+    opacity: 1;
+}
+.nav__link--main:after{
+    width: 23px;
+    height: 18px;
+    background-position: -21px -81px;
+    opacity: 0;
+}
+.nav__link--rev:before{
+    width: 23px;
+    height: 18px;
+    background-position: -21px -21px;
+    opacity: 1;
+}
+.nav__link--rev:after{
+    width: 23px;
+    height: 18px;
+    background-position: -83px -21px;;
+    opacity: 0;
+}
+.nav__list{
+    display: flex;
+    flex-direction: row;    
+}  
+.nav__link--rev-active:after{
+    width: 23px;
+    height: 18px;
+    background-position: -83px -21px;;
+} 
+.nav__link--main-active:after{
+    width: 23px;
+    height: 18px;
+    background-position: -21px -81px;
+}
+.nav__link--team-active:after{
+    width: 23px;
+    height: 18px;
+    background-position: -139px -81px;;
+}
+[class*=active] {
+    color: #000;
+}

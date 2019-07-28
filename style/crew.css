@@ -1,0 +1,102 @@
+.crew{
+    margin: 20px 0 0 10px;
+}
+.desc__text{
+    display: flex;
+    flex-direction: column;
+}
+
+.crew__list{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;  
+    align-items: baseline;
+    margin-top: 33px; 
+}
+.crew__desc{
+    padding-top: 16px;
+}
+
+.crew__item{
+    width: calc(100% / 3 - 5px);
+    margin-bottom: 65px;
+}
+.crew__full-name{
+    font-size: 18px;
+    font-weight: bold;
+}
+.crew__position{
+    font-size: 14px;
+    font-weight: bold;
+    color: #4b73b5;
+}
+.crew__paragraph{
+    font-size: 14px;
+    font-weight: 300;
+    padding-top: 7px;
+    line-height: 21px;
+}
+.crew__img{
+  max-width: 160px;
+  display: block;
+  
+}
+.user__avatar{
+    max-width: 160px;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto;
+}
+.user__avatar:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(92, 124, 163, 0.6);
+    transition: .3s;
+    opacity: 1;
+}
+.user__avatar:before{
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    font-weight: bold;
+    z-index: 1;
+    font-size: 24px;
+    opacity: 1;
+    transition: .3s;
+}
+.user__avatar--alex:before{
+    content: "Алексей";  
+}
+.user__avatar--inna:before{
+    content: "Инна";   
+}
+.user__avatar--boris:before{
+    content: "Борис";   
+}
+.user__avatar--elina:before{
+    content: "Элина";  
+}
+.user__avatar--elena:before{
+    content: "Елена";
+}
+.user__avatar--yrii:before{
+    content: "Юрий";
+}
+.user__avatar:hover::before{
+   opacity: 0;
+  
+}
+.user__avatar:hover::after{
+    opacity: 0;
+    
+ }

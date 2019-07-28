@@ -1,0 +1,40 @@
+.feeds{
+    max-width: 100%;
+    margin-left: 10px;
+}
+.news .item__text-container{
+    padding-top: 24px;
+}
+
+.news__list{
+    display: flex;
+    justify-content: space-between;
+}
+.news__item{
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    align-self: baseline;
+    border-bottom: none;
+    width: calc(100% / 3 - 30px);
+}
+.tarife__name{
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+._22_12_2015_Детские_авиабилеты_доступны_для_бизн {
+    font-size: 14px;
+    font-family: "Roboto";
+    color: rgb(101, 100, 100);
+    line-height: 1.5;
+    text-align: left;
+    position: absolute;
+    left: 906.984px;
+    top: 761.023px;
+    width: 260px;
+    height: 233px;
+    z-index: 32;
+  }
+  
+

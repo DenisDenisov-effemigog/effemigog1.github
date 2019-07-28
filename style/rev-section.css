@@ -1,0 +1,16 @@
+.reviews{
+    margin-left: 16px;
+    margin-bottom: 48px;
+}
+.reviews__item{
+    margin-left: 10px;
+}
+.reviews .item__text{
+    font-size: 18px;
+}
+.reviews__list{
+    margin-top: 5px;
+}
+.reviews .item__desc{
+    margin-left: 27px;
+}

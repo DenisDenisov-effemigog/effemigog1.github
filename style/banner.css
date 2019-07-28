@@ -1,0 +1,9 @@
+.banner{
+    min-width: 900px;
+    min-height: 300px;
+    margin: 13px 0 0 16px;
+    background-image: url(../img/Photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
